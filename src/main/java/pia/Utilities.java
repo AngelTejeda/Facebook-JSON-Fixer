@@ -12,6 +12,7 @@ public class Utilities {
         File newFolder = new File("Files/Converted Files/" + folderName);   //Folder where the files will be saved
         if(newFolder.exists()) {
             int i = 1;
+
             while(true) {
                 newFolder = new File("Files/Converted Files/" + folderName + i);
                 if(newFolder.exists())
