@@ -11,6 +11,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+//Este comentario antes no estaba
 public class Encoding {
     public static void fixDirectory(String path, File targetFolder) {
         File originalFolder = new File(path);  //Folder with the original files
@@ -89,7 +90,6 @@ public class Encoding {
                         //changeUri( (JSONObject) mediaIter.next() );
                         //System.out.println(temp.get("uri"));
                         changeUri((JSONObject) temp);
-
                     }
                 }
             }
