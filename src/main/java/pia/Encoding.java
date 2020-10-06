@@ -93,20 +93,18 @@ public class Encoding {
                     }
                 }
             }
-            //WRITE NEW JSON FILE
-            if(true) {
-                PrintWriter pw = null;
-                try {
-                    pw = new PrintWriter( newFile );
-                    pw.write( json.toJSONString() );
-                }
-                catch(IOException e) {
-                    System.out.println(e);
-                }
-                finally {
-                    if(pw != null)
-                        pw.close();
-                }
+            //Write new JSON File
+            PrintWriter pw = null;
+            try {
+                pw = new PrintWriter( newFile );
+                pw.write( json.toJSONString() );
+            }
+            catch(IOException e) {
+                System.out.println(e);
+            }
+            finally {
+                if(pw != null)
+                    pw.close();
             }
         }
         catch(FileNotFoundException e) {
